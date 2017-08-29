@@ -1,7 +1,7 @@
 version: '2'
 services:
   webhook:
-    image: node-pm2
+    image: node_pm2
     ports:
       - "6666:6666"
     volumes:
