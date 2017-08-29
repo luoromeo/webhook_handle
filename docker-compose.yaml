@@ -7,4 +7,4 @@ services:
     volumes:
       - /Users/luoromeo/Desktop/projects/luoromeo/webhook_handle:/home/app
     working_dir: /home/app
-    command: npm install &amp;&amp; pm2 start index.js --watch --no-daemon
+    command: pm2 start index.js --watch --no-daemon
