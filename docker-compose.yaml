@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  webhook:
+    image: node-pm2
+    ports:
+      - "6666:6666"
+    volumes:
+      - /Users/luoromeo/Desktop/projects/luoromeo/webhook_handle:/home/app
+    working_dir: /home/app
+    command: pm2 start index.js --watch --no-daemon
